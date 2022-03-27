@@ -10,6 +10,7 @@ fi
 RSYNC_SOURCE="/mnt/nts/Users/buick/${1}/"
 RSYNC_TARGET="/home/fraterboots/${@: -1}/"
 
+## Check that source directory exists
 if [ ! -d $RSYNC_SOURCE ]; then
 	echo "${RSYNC_SOURCE} does not exist"
 	exit 1
