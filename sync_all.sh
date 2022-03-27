@@ -4,5 +4,5 @@ if [ "$EUID" -ne 0 ]
   exit
 fi
 
-#/home/fraterboots/sync.sh Pictures
-#/home/fraterboots/sync.sh Documents
+sh /home/fraterboots/sync.sh Pictures
+sh /home/fraterboots/sync.sh Documents
