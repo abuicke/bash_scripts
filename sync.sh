@@ -1,5 +1,12 @@
 #!/bin/sh
 
+# Check that the script is being
+# run with super user privileges
+if [ "$EUID" -ne 0 ]
+  then echo "Please run as root"
+  exit
+fi
+
 RSYNC_SOURCE="/mnt/nts/Users/buick/${1}/"
 RSYNC_TARGET="/home/fraterboots/${@: -1}/"
 
