@@ -6,3 +6,4 @@ fi
 
 sh /home/fraterboots/sync.sh Pictures
 sh /home/fraterboots/sync.sh Documents
+sh /home/fraterboots/sync.sh Desktop
